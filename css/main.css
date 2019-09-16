@@ -147,6 +147,12 @@ h5 {
   line-height: 1.5;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 .main-container {
   margin: 0;
   padding: 0;
@@ -370,4 +376,50 @@ h5 {
 
 .cover-story.mini .cover-title {
   font-size: 1.5em;
+}
+
+.main-wrapper {
+  width: 85%;
+  margin: 3rem auto;
+  padding: 1%;
+  font-family: Ubuntu, "Helvetica Neue", Arial, sans-serif;
+}
+
+.latest::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.latest h2 {
+  padding: 1%;
+  font-size: 1.5rem;
+  color: #f42;
+  font-weight: 900;
+}
+
+.latest i {
+  font-size: 18px;
+}
+
+.latest-item {
+  width: 25%;
+  box-sizing: border-box;
+  float: right;
+  padding: 1%;
+}
+
+.latest-item h4 {
+  line-height: 1.3rem;
+}
+
+.story-byline li {
+  display: inline-block;
+  margin: 0.6rem 0.3rem 0 0;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.story-byline a {
+  color: #aaa;
 }
