@@ -139,18 +139,53 @@ table {
 }
 
 /* General */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.news-item img {
+  width: 100%;
+  max-width: 100%;
+  height: 135px;
+  object-fit: cover;
+}
+
 h5 {
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0;
   line-height: 1.5;
 }
 
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  font-family: Helvetica, sans-serif;
+  padding-bottom: 1.8rem;
+}
+
+.container h2 a {
+  color: #f42;
+  transition: color 500ms;
+  margin-left: 0.625rem;
+}
+
+h2 a:hover {
+  color: #000;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .main-container {
@@ -160,10 +195,31 @@ img {
   font-family: Georgia, "Helvetica Neue", Arial, sans-serif;
 }
 
+.container {
+  width: 85%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
 .grid {
   display: flex;
-  margin: 0.1em 0.6em;
   box-sizing: border-box;
+}
+
+.grid-col {
+  margin: 0.625rem;
+}
+
+.grid-3 {
+  width: 33.3%;
+}
+
+.grid-4 {
+  width: 25%;
 }
 
 .grid-2-3 {
@@ -238,11 +294,10 @@ img {
 
 .sub-nav .logo {
   background-color: #f42;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background-image: linear-gradient(to bottom right, #c09, #f42 85%);
   display: block;
-  height: 1.4em;
   padding: 1em 1em;
-  width: 5.5em;
+  width: 7em;
 }
 
 .sub-nav .nav-section li {
@@ -284,6 +339,10 @@ img {
 
 /* Main Content */
 
+.front-news {
+  margin: 0.1em 0.6em;
+}
+
 .cover-story {
   position: relative;
   color: #fff;
@@ -302,11 +361,15 @@ img {
 }
 
 .cover-story #main-image {
-  background-image: linear-gradient(to bottom right, rgba(240, 102, 98, 0.9), rgba(255, 68, 34, 0.9), rgba(10, 6, 4, 1)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/nunescow-796x417.jpg');
+  background-image: linear-gradient(to bottom, rgba(240, 102, 98, 0.9) 0%, rgba(255, 68, 34, 0.7) 20%, rgb(0, 0, 0) 100%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/nunescow-796x417.jpg');
   width: 100%;
   height: 490px;
   background-size: cover;
   background-position: center;
+}
+
+.cover-story .cover-logo {
+  width: 35rem;
 }
 
 .cover-story .cover-content {
@@ -378,48 +441,31 @@ img {
   font-size: 1.5em;
 }
 
-.main-wrapper {
-  width: 85%;
-  margin: 3rem auto;
-  padding: 1%;
-  font-family: Ubuntu, "Helvetica Neue", Arial, sans-serif;
+/* Latest News Section */
+
+.latest-news-content,
+.latest-funding-content {
+  /* display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 1.5rem;
+  box-sizing: border-box; */
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.latest::after {
-  content: '';
-  display: block;
-  clear: both;
+.news-item p {
+  font-weight: bold;
+  color: #000;
+  word-spacing: 0.1rem;
+  transition: color 200ms;
 }
 
-.latest h2 {
-  padding: 1%;
-  font-size: 1.5rem;
+.news-item p:hover {
   color: #f42;
-  font-weight: 900;
 }
 
-.latest i {
-  font-size: 18px;
-}
-
-.latest-item {
-  width: 25%;
-  box-sizing: border-box;
-  float: right;
-  padding: 1%;
-}
-
-.latest-item h4 {
-  line-height: 1.3rem;
-}
-
-.story-byline li {
-  display: inline-block;
-  margin: 0.6rem 0.3rem 0 0;
+.news-item span {
   font-size: 0.8rem;
   color: #aaa;
-}
-
-.story-byline a {
-  color: #aaa;
+  display: block;
+  margin-top: 0.5rem;
 }
