@@ -142,7 +142,6 @@ table {
 html {
   font-size: 16px;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
 }
 
 *,
@@ -168,16 +167,19 @@ h5 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
   font-family: Helvetica, sans-serif;
-  padding-bottom: 1.8rem;
+}
+
+.container header {
+  margin-bottom: 1.5rem;
 }
 
 .container h2 a {
   color: #f42;
   transition: color 500ms;
-  margin-left: 0.625rem;
+  margin: 0 4rem 0 0;
 }
 
 h2 a:hover {
@@ -192,34 +194,49 @@ p {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  font-family: Georgia, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Ubuntu", "Helvetica Neue", Arial, sans-serif;
 }
 
 .container {
-  width: 85%;
   margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .grid {
   display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   box-sizing: border-box;
 }
 
-.grid-col {
+.grid-row {
+  margin: 3rem 0;
+}
+
+.col-padding {
+  padding: 0.625rem;
+}
+
+.col-margin {
   margin: 0.625rem;
 }
 
 .grid-3 {
-  width: 33.3%;
+  flex-basis: calc(100% / 3);
+  width: calc(100% / 3);
+  max-width: calc(100% / 3);
 }
 
 .grid-4 {
-  width: 25%;
+  flex-basis: calc(100% / 4);
+  width: calc(100% / 4);
+  max-width: calc(100% / 4);
 }
 
 .grid-2-3 {
@@ -230,12 +247,12 @@ p {
   width: 33.3%;
 }
 
-/* Navigation */
-
-.main-content {
-  position: relative;
-  top: 7em;
+header .arrow {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
+
+/* Navigation */
 
 .main-nav {
   display: flex;
@@ -253,7 +270,7 @@ p {
   box-sizing: border-box;
 }
 
-.main-nav .nav-item,
+.main-nav .nav-news,
 .main-nav .nav-company {
   display: flex;
   flex-direction: row;
@@ -269,7 +286,7 @@ p {
   color: #fff;
 }
 
-.nav-item li:first-child a {
+.nav-news li:first-child a {
   color: #fff;
 }
 
@@ -309,21 +326,40 @@ p {
   margin-right: 1em;
 }
 
-.sub-nav .nav-section a,
-.sub-nav .search-icon {
+.sub-nav .nav-section .nav-link,
+.nav-icon .search-icon {
   color: #aaa;
 }
 
-.sub-nav .nav-section a:hover {
+.nav-icon .bar,
+.nav-icon .fa-bars:hover {
+  color: #f42;
+  font-size: 1.2rem;
+}
+
+.sub-nav .nav-section a:hover,
+.nav-icon i:hover {
   color: #333;
+  cursor: pointer;
 }
 
 .nav-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid #efefef;
+}
+
+.nav-icon .nav-item.bar {
+  display: none;
+}
+
+.nav-icon .nav-item {
   padding: 0 1.2em;
+  border-left: 1px solid #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .nav-message {
@@ -333,139 +369,6 @@ p {
   padding: 0.5em 1.5em;
   position: fixed;
   width: 100%;
-  top: 5.5em;
+  top: 5rem;
   z-index: 1;
-}
-
-/* Main Content */
-
-.front-news {
-  margin: 0.1em 0.6em;
-}
-
-.cover-story {
-  position: relative;
-  color: #fff;
-}
-
-.cover-story.main {
-  margin-right: 0.7em;
-}
-
-.mini-grid {
-  box-sizing: border-box;
-}
-
-.cover-story.mini:first-child {
-  margin-bottom: 0.7em;
-}
-
-.cover-story #main-image {
-  background-image: linear-gradient(to bottom, rgba(240, 102, 98, 0.9) 0%, rgba(255, 68, 34, 0.7) 20%, rgb(0, 0, 0) 100%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/nunescow-796x417.jpg');
-  width: 100%;
-  height: 490px;
-  background-size: cover;
-  background-position: center;
-}
-
-.cover-story .cover-logo {
-  width: 35rem;
-}
-
-.cover-story .cover-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.cover-story .content-upper,
-.cover-story .cover-header {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-.cover-story .content-upper {
-  top: 0;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.cover-story .cover-header {
-  bottom: 0;
-  flex-direction: column;
-}
-
-.cover-story .cover-header a,
-.cover-story .cover-header li {
-  color: #fff;
-}
-
-.cover-title {
-  font-size: 3.5em;
-  line-height: 1em;
-  font-weight: 800;
-  font-family: Helvetica, sans-serif;
-}
-
-.cover-byline {
-  display: flex;
-  font-size: 0.9em;
-  margin-top: 1em;
-}
-
-.cover-byline li {
-  margin-right: 1em;
-}
-
-.cover-story #mini-image-1 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Gocycle-GXi-11-e1568314899848-796x475.jpg');
-  width: 100%;
-  height: 240px;
-  background-size: cover;
-  background-position: center;
-}
-
-.cover-story #mini-image-2 {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed-796x419.jpg');
-  width: 100%;
-  height: 240px;
-  background-size: cover;
-  background-position: center;
-}
-
-.cover-story.mini .cover-title {
-  font-size: 1.5em;
-}
-
-/* Latest News Section */
-
-.latest-news-content,
-.latest-funding-content {
-  /* display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 1.5rem;
-  box-sizing: border-box; */
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.news-item p {
-  font-weight: bold;
-  color: #000;
-  word-spacing: 0.1rem;
-  transition: color 200ms;
-}
-
-.news-item p:hover {
-  color: #f42;
-}
-
-.news-item span {
-  font-size: 0.8rem;
-  color: #aaa;
-  display: block;
-  margin-top: 0.5rem;
 }
