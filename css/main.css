@@ -372,3 +372,116 @@ header .arrow {
   top: 5rem;
   z-index: 1;
 }
+
+/* Main Content */
+
+.main-content {
+  position: relative;
+  top: 7rem;
+}
+
+.front-news {
+  margin: 0.1em 0.6em;
+}
+
+.cover-story {
+  position: relative;
+  color: #fff;
+}
+
+.cover-story.main {
+  margin-right: 0.7em;
+}
+
+.mini-grid {
+  box-sizing: border-box;
+}
+
+.cover-story.mini:first-child {
+  margin-bottom: 0.7em;
+}
+
+.cover-story .main-image {
+  background: linear-gradient(to bottom, rgba(240, 102, 98, 0.9) 0%, rgba(255, 68, 34, 0.7) 20%, rgb(0, 0, 0) 100%), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/nunescow-796x417.jpg') rgb(240, 102, 98);
+  width: 100%;
+  height: calc((240px * 2) + (0.7rem));
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-story .cover-logo {
+  width: 35rem;
+}
+
+.cover-story .cover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cover-story .content-upper,
+.cover-story .cover-header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.cover-story .content-upper {
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.cover-story .cover-header {
+  bottom: 0;
+  flex-direction: column;
+}
+
+.cover-story .cover-header .title {
+  color: #fff;
+}
+
+.cover-byline .list-item .title,
+.cover-byline .list-item {
+  color: #aaa;
+  font-size: 0.8rem;
+}
+
+.cover-title {
+  font-size: 3.5em;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.cover-byline {
+  display: flex;
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.cover-byline .list-item {
+  margin-right: 1em;
+}
+
+.cover-story .mini-image-1 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Gocycle-GXi-11-e1568314899848-796x475.jpg') #000;
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-story .mini-image-2 {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/OnePlus-tv-hed-796x419.jpg') #000;
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-story.mini .cover-title {
+  font-size: 1.5em;
+}
