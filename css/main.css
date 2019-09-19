@@ -839,3 +839,72 @@ header .arrow {
   font-weight: 600;
   margin-left: 0.6rem;
 }
+
+/* Footer */
+footer {
+  position: relative;
+  top: 9rem;
+  color: #fff;
+}
+
+.footer-links {
+  padding: 3em 0 2em;
+  background-color: #131313;
+}
+
+.footer-nav-social,
+.footer-menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav-social .social-item {
+  background-color: #333;
+  padding: 0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+}
+
+.footer-nav-social .social-item:hover {
+  background-color: #000;
+  border: 2px solid #333;
+}
+
+.footer-nav-social .social-link i {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.footer-menu {
+  margin-top: 1rem;
+}
+
+.footer-menu .menu-link {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0.4rem;
+}
+
+.footer-menu .menu-link:hover {
+  color: #fff;
+}
+
+.footer-legal {
+  padding: 2.5rem 0 2.5rem;
+  background-color: #000;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.footer-legal .heart {
+  color: #f42;
+}
