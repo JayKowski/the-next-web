@@ -1000,3 +1000,133 @@ footer {
     align-items: flex-start;
   }
 }
+
+@media (max-width: 767px) {
+  /* General */
+
+  .grid {
+    flex-direction: column;
+  }
+
+  [class*="grid"] {
+    width: 100%;
+  }
+
+  .grid-1 {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .col-padding {
+    padding: 0;
+  }
+
+  /* Navigation */
+
+  .sub-nav {
+    top: 0;
+  }
+
+  .nav-message {
+    top: 3rem;
+    font-size: 0.72rem;
+  }
+
+  .nav-icon .nav-item.bar {
+    display: flex;
+  }
+
+  .nav-section .nav-item:not(:first-child),
+  .main-nav {
+    display: none;
+  }
+
+  /* Main Content */
+
+  /* Front-news */
+  .main-content {
+    top: 5rem;
+  }
+
+  .cover-image[class*="image"] {
+    height: 200px;
+  }
+
+  .cover-title,
+  .cover-story.mini .cover-title {
+    font-size: 1.2em;
+  }
+
+  .cover-story.main {
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+  }
+
+  .cover-story .content-upper,
+  .cover-header .cover-section {
+    display: none;
+  }
+
+  /* Latest-news */
+
+  .latest-news h2 .heading,
+  .apple-event h2 .heading {
+    margin: 0 4rem 0 0;
+  }
+
+  .news-item,
+  .deal-card {
+    margin-bottom: 0.7rem;
+  }
+
+  .news-item img,
+  .latest-deals .deal-card img {
+    width: 5rem;
+    max-width: 5rem;
+    height: 5rem;
+    max-height: 5rem;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+
+  .latest-news-content .news-item,
+  .latest-deals .deal-card {
+    display: flex;
+  }
+
+  /* Latest funding section */
+
+  .latest-funding-list {
+    flex-direction: column;
+  }
+
+  .latest-funding-list > * {
+    margin: 0.3rem 0 !important;
+    font-size: 0.9rem;
+  }
+
+  .latest-funding-list .list-item:not(:last-child)::after {
+    content: "";
+  }
+
+  .latest-funding-content .funding-card,
+  .u-row .u-row-content {
+    margin-bottom: 2rem;
+  }
+
+  /* Latest deal section */
+  .deal-image .deal-discount,
+  .deal-image .tag {
+    display: none;
+  }
+
+  .deal-body .deal-title,
+  .deal-body .deal-new {
+    font-size: 0.9rem;
+  }
+
+  .deal-body .deal-old {
+    font-size: 0.75rem;
+  }
+}
