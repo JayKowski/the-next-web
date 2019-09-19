@@ -510,3 +510,122 @@ header .arrow {
   display: block;
   margin-top: 0.5rem;
 }
+
+/* Latest Funding Section */
+
+.latest-funding header,
+.latest-deals header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.latest-funding-list,
+.latest-deals-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.funding-card {
+  position: relative;
+  background-color: #fffaf8;
+  font-family: Ubuntu, sans-serif;
+}
+
+.funding-card .funding-heading,
+.funding-card .funding-deets {
+  padding: 10px 16px 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.funding-card .funding-heading {
+  background-color: #f42;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.funding-card .funding-deets {
+  color: #000;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.funding-card .image {
+  position: absolute;
+}
+
+.funding-card img {
+  width: 60px;
+  min-width: 60px;
+  max-width: 60px;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  margin: 10.6px;
+}
+
+.funding-deets h5 {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.funding-body {
+  padding: 1rem;
+}
+
+.funding-body .item {
+  position: relative;
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  line-height: 22px;
+}
+
+.funding-body .item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.funding-body .item i {
+  margin-right: 0.5rem;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.latest-funding header .list-links,
+.latest-deals header .list-links {
+  margin-right: 0.3rem;
+  color: #f42;
+}
+
+.latest-funding header .list-item:not(:first-child) {
+  margin-left: 0.3rem;
+}
+
+.latest-funding header .list-links:hover,
+.latest-deals header .list-links:hover {
+  color: #000;
+}
+
+.latest-funding-list .list-item:not(:last-child)::after {
+  content: "|";
+  color: #f42;
+}
+
+.funding-footer {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.4rem;
+}
+
+.funding-footer .mini {
+  color: #aaa;
+}
