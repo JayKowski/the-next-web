@@ -3,7 +3,7 @@ Building with responsive design
 
 ## Table of contents
 * [General info](#general-info)
-* [Setup](#setup & Live Preview)
+* [Setup  & Live Preview](#setup)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Features](#features)
