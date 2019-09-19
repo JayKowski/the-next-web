@@ -1,5 +1,5 @@
 # Project Name
-Building with responsive design
+The Next Web Page Clone
 
 ## Table of contents
 * [General info](#general-info)
