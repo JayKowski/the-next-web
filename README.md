@@ -19,11 +19,15 @@ Find attached below a preview of the project: <br>
 <a href="https://raw.githack.com/adaorachi/next-web-copy/master/index.html">The next web clone page </a>
 
 ## Screenshots
+<img src="images/screenshot1.jpg"><br><br>
 Find below attached some screenshots taken from our re-design of the webpage:
-<img src="images/screenshot1.jpg">
 
 1. <a href="images/screenshot1.jpg">screenshot-one</a><br>
 2. <a href="images/screenshot2.jpg">screenshot-two</a><br>
+3. <a href="images/screenshot3.jpg">screenshot-three</a><br>
+4. <a href="images/screenshot4.jpg">screenshot-four</a><br>
+5. <a href="images/screenshot5.jpg">screenshot-five</a><br>
+6. <a href="images/screenshot6.jpg">screenshot-six</a><br>
 
 ## Technologies
 * HTML5
