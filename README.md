@@ -20,14 +20,10 @@ Find attached below a preview of the project: <br>
 
 ## Screenshots
 Find below attached some screenshots taken from our re-design of the webpage:
+<img src="images/screenshot1.jpg">
 
-1. <a href="images/screenshot-one.png">screenshot-one</a><br>
-2. <a href="images/screenshot-two.png">screenshot-two</a><br>
-3. <a href="images/screenshot-three.png">screenshot-three</a><br>
-4. <a href="images/screenshot-four.png">screenshot-four</a><br>
-5. <a href="images/screenshot-five.png">screenshot-five</a><br>
-6. <a href="images/screenshot-six.png">screenshot-six</a><br>
-7. <a href="images/screenshot-seven.png">screenshot-seven</a><br>
+1. <a href="images/screenshot1.jpg">screenshot-one</a><br>
+2. <a href="images/screenshot2.jpg">screenshot-two</a><br>
 
 ## Technologies
 * HTML5
