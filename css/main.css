@@ -485,3 +485,28 @@ header .arrow {
 .cover-story.mini .cover-title {
   font-size: 1.5em;
 }
+
+/* Latest News Section */
+
+.latest-news h2 .heading,
+.apple-event h2 .heading {
+  margin: 0 4rem 0 0.625rem;
+}
+
+.news-item p {
+  font-weight: bold;
+  color: #000;
+  word-spacing: 0.1rem;
+  transition: color 200ms;
+}
+
+.news-item p:hover {
+  color: #f42;
+}
+
+.news-item span {
+  font-size: 0.8rem;
+  color: #aaa;
+  display: block;
+  margin-top: 0.5rem;
+}
