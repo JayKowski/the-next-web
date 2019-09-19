@@ -16,7 +16,7 @@ The above project was undertaken so as to delve deep into the architecture of <a
 ## Setup
 This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.
 Find attached below a preview of the project: <br>
-<a href="https://raw.githack.com/adaorachi/next-web-copy/master/index.html">the next web, responsive design </a>
+<a href="https://raw.githack.com/adaorachi/next-web-copy/master/index.html">The next web clone page </a>
 
 ## Screenshots
 Find below attached some screenshots taken from our re-design of the webpage:
