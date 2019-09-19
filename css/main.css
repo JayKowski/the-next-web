@@ -629,3 +629,213 @@ header .arrow {
 .funding-footer .mini {
   color: #aaa;
 }
+
+/* U-row section  */
+
+.section-popular {
+  position: relative;
+}
+
+.section-popular .headings {
+  padding: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section-popular .content-image {
+  color: #fff;
+  font-size: 13px;
+  width: 100%;
+  height: 276px;
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first .grid-3 .content-image {
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.first .grid-3:nth-child(1) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Apple-Arcade-1-368x276.jpg');
+}
+
+.first .grid-3:nth-child(2) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/05/OnePlus-7-Pro-1-of-4-368x276.jpg');
+}
+
+.first .grid-3:nth-child(3) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/04/cloudcomputing-730x348.jpg');
+}
+
+.first .grid-3:nth-child(4) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/mixingboard-368x276.jpg');
+}
+
+.first .grid-3:nth-child(5) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Unagi-Model-One-Scooter-1-of-8-368x276.jpg');
+}
+
+.first .grid-3:nth-child(6) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Iraqi_voters_inked_fingers-Cropped-368x276.jpg');
+}
+
+.first .grid-3:nth-child(7) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Pam-Angela-The-Office-368x276.jpg');
+}
+
+.first .grid-3:nth-child(8) .content-image {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/The-Offspring-World-of-Tanks-368x276.jpg');
+}
+
+.section-popular .sub-title {
+  color: #fff;
+}
+
+.section-popular .content-image h5 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.section-popular .content-image h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.section-byline {
+  display: flex;
+}
+
+.section-byline .list-link,
+.section-byline .byline-sub {
+  margin: 0.5rem 0.5rem 0 0;
+  color: #999;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.section-latest {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 68, 34, 0.06);
+  margin: 2px 0;
+}
+
+.section-latest .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-latest .header {
+  padding: 10px 14px 0;
+  color: #f42;
+}
+
+.section-latest .header h5 {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.section-latest .mini-title {
+  color: #f42;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.section-popular .content h3:hover,
+.section-latest .mini-title:hover {
+  box-shadow: inset 0 -1px 0 #ffffff4d;
+}
+
+.section-latest img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.u-row-content .list {
+  border-bottom: 1px solid #eee;
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  list-style: disc;
+  color: #f42;
+}
+
+.section-list .list-link {
+  color: #555;
+}
+
+.section-list .list-link:hover {
+  color: #000;
+}
+
+/* Latest deal secction */
+.deal-body .deal-title,
+.deal-body .deal-price {
+  margin-top: 0.5rem;
+}
+
+.deal-image {
+  position: relative;
+}
+
+.deal-image img {
+  width: 100%;
+  height: auto;
+}
+
+.deal-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.deal-discount {
+  width: 0;
+  height: 0;
+  border-top: 90px solid #f1c100;
+  border-left: 90px solid transparent;
+  color: #000;
+}
+
+.deal-image .tag {
+  transform: rotate(45deg);
+  font-size: 0.85rem;
+  font-weight: 700;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.deal-body .title-link {
+  color: #000;
+}
+
+.deal-price .deal-old {
+  font-size: 0.8rem;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.deal-price .deal-new {
+  font-size: 1rem;
+  color: #777;
+  font-weight: 600;
+  margin-left: 0.6rem;
+}
