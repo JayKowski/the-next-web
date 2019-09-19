@@ -908,3 +908,95 @@ footer {
 .footer-legal .heart {
   color: #f42;
 }
+
+/* Media Queries */
+
+@media (max-width: 1023px) {
+  /* General */
+  .container {
+    width: 100%;
+  }
+
+  .grid-3 {
+    flex-basis: calc(100% / 3);
+    width: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  .grid-2 {
+    flex-basis: calc(100% / 2);
+    width: calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+
+  /* Navigation */
+
+  .main-nav {
+    top: 0;
+  }
+
+  .sub-nav {
+    top: 2rem;
+  }
+
+  .nav-message {
+    top: 5rem;
+    text-align: left;
+  }
+
+  .nav-icon .nav-item.bar {
+    display: none;
+  }
+
+  .nav-section .nav-item:not(:first-child) {
+    display: flex;
+  }
+
+  /* Main Content */
+
+  /* Front-news */
+
+  .cover-image.main-image {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/nunescow-796x417.jpg') rgb(240, 102, 98);
+  }
+
+  .cover-image[class*="mini"] {
+    height: 180px;
+  }
+
+  .cover-image[class*="main"] {
+    height: calc((180px * 2) + (0.7rem));
+  }
+
+  .cover-title {
+    font-size: 2.5rem;
+  }
+
+  .cover-story.mini .cover-title {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  .cover-story .content-upper,
+  .cover-header .cover-section,
+  .cover-byline .list-item:not(.display):last-child {
+    display: none;
+  }
+
+  /* Latest News */
+
+  .news-item p {
+    font-size: 0.9rem;
+  }
+
+  /* Latest funding */
+
+  .latest-funding-list {
+    margin-top: 0.7rem;
+  }
+
+  .latest-funding header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
