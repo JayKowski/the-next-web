@@ -16,7 +16,7 @@ The above project was undertaken so as to delve deep into the architecture of <a
 ## Setup & Live Preview
 This project is built with the basic web page structures and styling. It is pretty simple to setup. All you have to do is to clone the project into your local repository.
 Find attached below a preview of the project: <br>
-<a href="https://raw.githack.com/JayKowski/the-next-web/the-next-web/index.html">The next web clone page </a>
+<a href="https://raw.githack.com/JayKowski/the-next-web/master/index.html">The next web clone page </a>
 
 ## Screenshots
 <img src="images/screenshot1.jpg"><br><br>
